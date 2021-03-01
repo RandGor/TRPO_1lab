@@ -59,6 +59,7 @@ namespace TRPO_lab_1.Utils
             editor.Bs();
         }
 
+        //очистить историю
         internal void ClearHistory()
         {
             history.Clear();

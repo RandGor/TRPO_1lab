@@ -44,12 +44,8 @@ namespace TRPO_lab_1.Utils
         public string AddDelim()
         {
             for (int i = 0; i < number.Length; i++)
-            {
                 if (number[i] == Extensions.delim[0])
-                {
                     return number;
-                }
-            }
 
             number += Extensions.delim[0];
             return number;
@@ -83,7 +79,8 @@ namespace TRPO_lab_1.Utils
         public int ErrorCatch(int p)
         {
             // обработка некорректно заданного числа
-            if (number[0] == Extensions.delim[0]) return 1;
+            if (number[0] == Extensions.delim[0]) 
+                return 1;
 
             // если не было поймано ошибок, возвращаем код 3
             return 3;
