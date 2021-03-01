@@ -75,18 +75,6 @@ namespace TRPO_lab_1.Utils
             return number;
         }
 
-        // обработка ошибок
-        public int ErrorCatch(int p)
-        {
-            // обработка некорректно заданного числа
-            if (number[0] == Extensions.delim[0]) 
-                return 1;
-
-            // если не было поймано ошибок, возвращаем код 3
-            return 3;
-
-        }
-
     }
 
 }
